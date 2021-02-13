@@ -34,8 +34,8 @@ let mapleader=";"
 """LATEX COMMANDS"""
 	"NORMAL MODE MACROS"
 	
-	"compile script must be in same directory as main.tex"
-	autocmd Filetype tex nnoremap;cc :! ./compiletex.sh main 1 <Enter>
+	"compile script must be in same directory as %.tex"
+	autocmd Filetype tex nnoremap;cc :! ./compiletex.sh % 1 <Enter>
 
 	"INSERT MODE MACROS"
 	"Equation and listing environments"
