@@ -7,10 +7,10 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 
-if [ $2 == 1 ]; then
+if [[ $2 == 1 ]]; then
 	bibtex $DOCNAME.aux
 fi
-if [ $2 == 2 ]; then
+if [[ $2 == 2 ]]; then
 	biber $DOCNAME.bcf
 fi
 pdflatex $DOCNAME.tex
