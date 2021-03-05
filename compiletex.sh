@@ -1,5 +1,5 @@
 #!/bin/bash
-#Compile LaTeX document into PDF
+#Compile LaTeX document into PDF --
 DOCNAME="${1%.*}"
 pdflatex $DOCNAME.tex
 if [ $? -ne 0 ]; then
